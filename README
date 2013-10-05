@@ -27,3 +27,11 @@ takeuchi(x=18, y=12, z=6) = 7
 <siberia: ~/src/takeuchi> $ 
 
 That's all for now, folks.
+
+
+LICENSE
+
+None of this is probably worth licensing, but here goes anyways:
+
+MIPSTAK is released under the ISC license. See the LICENSE file
+for the full text of the license.
