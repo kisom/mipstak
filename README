@@ -29,6 +29,9 @@ tarai(x=18, y=12, z=6) = 7
 
 That's all for now, folks.
 
+Addendum: I [wrote a bit](gopher://tyrfingr.is/0/kyle/phlog/2013/10/05.txt]
+about the process of writing this.
+
 
 LICENSE
 
@@ -36,3 +39,4 @@ None of this is probably worth licensing, but here goes anyways:
 
 MIPSTAK is released under the ISC license. See the LICENSE file
 for the full text of the license.
+
