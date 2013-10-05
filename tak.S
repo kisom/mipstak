@@ -15,7 +15,7 @@
  */
 
 	.data
-result:	.asciiz	"takeuchi(x=%d, y=%d, z=%d) = %d\n"
+result:	.asciiz	"tak(x=%d, y=%d, z=%d) = %d\n"
 args:	.word	18, 12, 6
 
 	.text
