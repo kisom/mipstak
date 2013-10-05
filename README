@@ -1,0 +1,29 @@
+takeuchi
+
+This is a MIPS64 assembly implementation of Takeuchi's algorithm,
+inspired by late night browsing on Nekochan. A C implementation is
+included as a baseline.
+
+The assembly is a bit inelegant, but I'm working on that ;). I don't
+have command line parsing of arguments in the MIPS64 version; to
+change the initial parameters, edit the three words starting at
+the label "args".
+
+On my Octane (dual 250 MHz R10K):
+
+<siberia: ~/src/takeuchi> $ make
+cc -o ctakeuchi -O2 -pipe  -fPIC  -g -O0 -static takeuchi.c
+cc -o atakeuchi -g -O0 -static  -g -O0 -static takeuchi.S
+<siberia: ~/src/takeuchi> $ time ./ctakeuchi 18 12 6
+nruns: 63609
+t: 7
+elapsed: 11336 usec
+elapsed: 0 sec
+average: 11336 usec
+    0m0.03s real     0m0.00s user     0m0.00s system
+<siberia: ~/src/takeuchi> $ time ./atakeuchi
+takeuchi(x=18, y=12, z=6) = 7
+    0m0.02s real     0m0.00s user     0m0.01s system
+<siberia: ~/src/takeuchi> $ 
+
+That's all for now, folks.
