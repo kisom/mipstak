@@ -1,17 +1,16 @@
 CFLAGS += -fPIC
-ASMFLAGS += -g -O0 -static
-LDFLAGS += -g -O0 -static
-TARGETS = ctakeuchi atakeuchi
+LDFLAGS += -static
+TARGETS = ctak atak
 
 all: $(TARGETS)
 
 clean:
 	rm -f *.o $(TARGETS) *.core
 
-ctakeuchi: takeuchi.c
-	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) takeuchi.c
+ctak: tak.c
+	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) tak.c
 
-atakeuchi: takeuchi.S
-	$(CC) -o $@ $(ASMFLAGS) $(LDFLAGS) takeuchi.S
+atak: tak.S
+	$(CC) -o $@ $(ASMFLAGS) $(LDFLAGS) tak.S
 
 .PHONY: all clean
